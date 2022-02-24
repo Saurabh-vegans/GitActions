@@ -14,6 +14,7 @@
 		ACEB582827C7771E00A43D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEB582727C7771E00A43D22 /* Assets.xcassets */; };
 		ACEB582B27C7771E00A43D22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEB582927C7771E00A43D22 /* LaunchScreen.storyboard */; };
 		ACEB583927C77EF600A43D22 /* GithubActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB583827C77EF600A43D22 /* GithubActionsTests.swift */; };
+		ACEB584227C79DFF00A43D22 /* VideoCallFramework in Frameworks */ = {isa = PBXBuildFile; productRef = ACEB584127C79DFF00A43D22 /* VideoCallFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEB584227C79DFF00A43D22 /* VideoCallFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +117,9 @@
 			dependencies = (
 			);
 			name = GithubActions;
+			packageProductDependencies = (
+				ACEB584127C79DFF00A43D22 /* VideoCallFramework */,
+			);
 			productName = GithubActions;
 			productReference = ACEB581B27C7771B00A43D22 /* GithubActions.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +170,9 @@
 				Base,
 			);
 			mainGroup = ACEB581227C7771B00A43D22;
+			packageReferences = (
+				ACEB584027C79DFF00A43D22 /* XCRemoteSwiftPackageReference "bh-video-iOS" */,
+			);
 			productRefGroup = ACEB581C27C7771B00A43D22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -493,6 +501,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACEB584027C79DFF00A43D22 /* XCRemoteSwiftPackageReference "bh-video-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:Bella-Health/bh-video-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACEB584127C79DFF00A43D22 /* VideoCallFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACEB584027C79DFF00A43D22 /* XCRemoteSwiftPackageReference "bh-video-iOS" */;
+			productName = VideoCallFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACEB581327C7771B00A43D22 /* Project object */;
 }
