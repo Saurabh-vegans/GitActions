@@ -40,7 +40,7 @@ jobs:
 
       - name: Pod Install
         run: |
-             cd BellaHealth
+             cd GithubActions
              pod setup
              pod install #--repo-update
 
@@ -48,8 +48,8 @@ jobs:
         id: unitTest
         continue-on-error: true
         run: |
-             cd BellaHealth
-             xcodebuild test -scheme BellaHealth_Enterprise_Stage -workspace BellaHealth.xcworkspace -destination 'platform=iOS Simulator,OS=14.2,name=iPhone 12 Pro Max' clean test
+             cd GithubActions
+             xcodebuild test -scheme GithubActions -workspace GithubActions.xcworkspace -destination 'platform=iOS Simulator,OS=14.2,name=iPhone 12 Pro Max' clean test
              echo "::set-output name=result::$?"
              if [[ $? == 0 ]]; then
              echo "Success"
