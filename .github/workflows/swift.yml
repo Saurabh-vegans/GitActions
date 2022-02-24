@@ -15,13 +15,13 @@ jobs:
     runs-on: macOS-latest
     steps:
 
-#      - name: Setup SSH Authentication (Swift Package Manager)
-#        uses: webfactory/ssh-agent@v0.4.1
-#        with:
-#            ssh-private-key: ${{ secrets.SWIFT_PACKAGE_MANAGER_DEPLOY_KEY }}
+      - name: Setup SSH Authentication (Swift Package Manager)
+        uses: webfactory/ssh-agent@v0.4.1
+        with:
+            ssh-private-key: ${{ secrets.SWIFT_PACKAGE_MANAGER_DEPLOY_KEY }}
 
-#      - name: Adding Known Hosts for SSH (Swift Package Manager)
-#        run: for ip in $(dig @8.8.8.8 github.com +short); do ssh-keyscan github.com,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts
+      - name: Adding Known Hosts for SSH (Swift Package Manager)
+        run: for ip in $(dig @8.8.8.8 github.com +short); do ssh-keyscan github.com,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts
 
       - name: Clone Repository
         uses: actions/checkout@v2
