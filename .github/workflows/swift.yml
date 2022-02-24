@@ -1,4 +1,4 @@
-name: BH Unit Test Workflow
+name: GithubActions Workflow
 
 on:
   pull_request:
