@@ -49,7 +49,7 @@ jobs:
         continue-on-error: true
         run: |
              cd GithubActions
-             xcodebuild test -scheme GithubActions clean test
+             xcodebuild test GithubActions.xcworkspace clean test
              echo "::set-output name=result::$?"
              if [[ $? == 0 ]]; then
              echo "Success"
