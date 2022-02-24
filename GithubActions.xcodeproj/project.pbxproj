@@ -15,10 +15,6 @@
 		ACEB582B27C7771E00A43D22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEB582927C7771E00A43D22 /* LaunchScreen.storyboard */; };
 		ACEB583927C77EF600A43D22 /* GithubActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB583827C77EF600A43D22 /* GithubActionsTests.swift */; };
 		ACEB584227C79DFF00A43D22 /* VideoCallFramework in Frameworks */ = {isa = PBXBuildFile; productRef = ACEB584127C79DFF00A43D22 /* VideoCallFramework */; };
-		ACEB584927C7A61D00A43D22 /* AmazonChimeSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB584627C7A5D000A43D22 /* AmazonChimeSDK.xcframework */; };
-		ACEB584A27C7A61D00A43D22 /* AmazonChimeSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB584627C7A5D000A43D22 /* AmazonChimeSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ACEB584C27C7A61F00A43D22 /* AmazonChimeSDKMedia.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB584527C7A5D000A43D22 /* AmazonChimeSDKMedia.xcframework */; };
-		ACEB584D27C7A61F00A43D22 /* AmazonChimeSDKMedia.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB584527C7A5D000A43D22 /* AmazonChimeSDKMedia.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ACEB584D27C7A61F00A43D22 /* AmazonChimeSDKMedia.xcframework in Embed Frameworks */,
-				ACEB584A27C7A61D00A43D22 /* AmazonChimeSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,8 +52,6 @@
 		ACEB583627C77EF600A43D22 /* GithubActionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubActionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEB583827C77EF600A43D22 /* GithubActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubActionsTests.swift; sourceTree = "<group>"; };
 		ACEB583F27C78EB100A43D22 /* GithubActionsTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GithubActionsTests.xctestplan; sourceTree = "<group>"; };
-		ACEB584527C7A5D000A43D22 /* AmazonChimeSDKMedia.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AmazonChimeSDKMedia.xcframework; sourceTree = "<group>"; };
-		ACEB584627C7A5D000A43D22 /* AmazonChimeSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AmazonChimeSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACEB584C27C7A61F00A43D22 /* AmazonChimeSDKMedia.xcframework in Frameworks */,
-				ACEB584927C7A61D00A43D22 /* AmazonChimeSDK.xcframework in Frameworks */,
 				ACEB584227C79DFF00A43D22 /* VideoCallFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +97,6 @@
 				ACEB581E27C7771B00A43D22 /* AppDelegate.swift */,
 				ACEB582027C7771B00A43D22 /* SceneDelegate.swift */,
 				ACEB582227C7771B00A43D22 /* ViewController.swift */,
-				ACEB584327C7A5BE00A43D22 /* Resources */,
 				ACEB582427C7771B00A43D22 /* Main.storyboard */,
 				ACEB582727C7771E00A43D22 /* Assets.xcassets */,
 				ACEB582927C7771E00A43D22 /* LaunchScreen.storyboard */,
@@ -123,23 +112,6 @@
 				ACEB583F27C78EB100A43D22 /* GithubActionsTests.xctestplan */,
 			);
 			path = GithubActionsTests;
-			sourceTree = "<group>";
-		};
-		ACEB584327C7A5BE00A43D22 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				ACEB584427C7A5D000A43D22 /* Chime SDK */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		ACEB584427C7A5D000A43D22 /* Chime SDK */ = {
-			isa = PBXGroup;
-			children = (
-				ACEB584527C7A5D000A43D22 /* AmazonChimeSDKMedia.xcframework */,
-				ACEB584627C7A5D000A43D22 /* AmazonChimeSDK.xcframework */,
-			);
-			path = "Chime SDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -549,8 +521,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:Bella-Health/bh-video-iOS.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				branch = ChimeSDK_reference;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
