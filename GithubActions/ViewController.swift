@@ -7,7 +7,7 @@
 
 import UIKit
 import VideoCallFramework
-import UITextView_Placeholder
+import LPMessagingSDK
 
 class ViewController: UIViewController {
  
