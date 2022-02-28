@@ -31,18 +31,18 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode.app && /usr/bin/xcodebuild -version
 
-#      - uses: actions/cache@v2
-#        with:
-#          path: Pods
-#          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
-#          restore-keys: |
-#                       ${{ runner.os }}-pods-
+      - uses: actions/cache@v2
+        with:
+          path: Pods
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+          restore-keys: |
+                       ${{ runner.os }}-pods-
 
-#      - name: Pod Install
-#        run: |
+      - name: Pod Install
+        run: |
 #             cd GithubActions
-#             pod setup
-#             pod install #--repo-update
+             pod setup
+             pod install #--repo-update
 
       - name: Execute Unit Tests
         id: unitTest
