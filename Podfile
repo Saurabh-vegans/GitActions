@@ -16,3 +16,14 @@ pod 'LPMessagingSDK'
   end
 
 end
+
+post_install do |installer_representation|
+    installer_representation.pods_project.targets.each do |target|
+      puts target.name
+      if target.name == 'LPMessagingSDK'
+        target.build_configurations.each do |config|
+          config.build_settings['ONLY_ACTIVE_ARCH'] = 'YES'
+        end
+      end
+    end
+end
