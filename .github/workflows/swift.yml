@@ -47,7 +47,7 @@ jobs:
         id: unitTest
         continue-on-error: true
         run: |
-             xcodebuild -scheme GithubActions_2 -destination 'platform=iOS Simulator,OS=15.2,name=iPhone 13 Pro Max' clean test
+             xcodebuild -scheme GithubActions_2 -workspace GithubActions -destination 'platform=iOS Simulator,OS=15.2,name=iPhone 13 Pro Max' clean test
              echo "::set-output name=result::$?"
              if [[ $? == 0 ]]; then
              echo "Success"
