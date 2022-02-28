@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3DBCEF29B40CB5100FC547CB /* Pods_GithubActionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95A2E1F034F7572A38EF5F2 /* Pods_GithubActionsTests.framework */; };
 		ACE8A0BE27CCD33D00F8BD79 /* GithubActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8A0BD27CCD33D00F8BD79 /* GithubActionsTests.swift */; };
+		ACE8A0CF27CCEB9900F8BD79 /* Pods_GithubActions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1B819B9C08643420EEA5D7 /* Pods_GithubActions.framework */; };
+		ACE8A0D027CCEB9900F8BD79 /* Pods_GithubActions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1B819B9C08643420EEA5D7 /* Pods_GithubActions.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ACEB581F27C7771B00A43D22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB581E27C7771B00A43D22 /* AppDelegate.swift */; };
 		ACEB582127C7771B00A43D22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB582027C7771B00A43D22 /* SceneDelegate.swift */; };
 		ACEB582327C7771B00A43D22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB582227C7771B00A43D22 /* ViewController.swift */; };
@@ -16,7 +18,6 @@
 		ACEB582827C7771E00A43D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEB582727C7771E00A43D22 /* Assets.xcassets */; };
 		ACEB582B27C7771E00A43D22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEB582927C7771E00A43D22 /* LaunchScreen.storyboard */; };
 		ACEB584227C79DFF00A43D22 /* VideoCallFramework in Frameworks */ = {isa = PBXBuildFile; productRef = ACEB584127C79DFF00A43D22 /* VideoCallFramework */; };
-		D1D7DA3ABD260887A72BCE24 /* Pods_GithubActions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1B819B9C08643420EEA5D7 /* Pods_GithubActions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				ACE8A0D027CCEB9900F8BD79 /* Pods_GithubActions.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,7 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACEB584227C79DFF00A43D22 /* VideoCallFramework in Frameworks */,
-				D1D7DA3ABD260887A72BCE24 /* Pods_GithubActions.framework in Frameworks */,
+				ACE8A0CF27CCEB9900F8BD79 /* Pods_GithubActions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +223,7 @@
 			);
 			mainGroup = ACEB581227C7771B00A43D22;
 			packageReferences = (
-				ACEB584027C79DFF00A43D22 /* XCRemoteSwiftPackageReference "bh-video-iOS.git" */,
+				ACEB584027C79DFF00A43D22 /* XCRemoteSwiftPackageReference "bh-video-iOS" */,
 			);
 			productRefGroup = ACEB581C27C7771B00A43D22 /* Products */;
 			projectDirPath = "";
@@ -643,7 +645,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ACEB584027C79DFF00A43D22 /* XCRemoteSwiftPackageReference "bh-video-iOS.git" */ = {
+		ACEB584027C79DFF00A43D22 /* XCRemoteSwiftPackageReference "bh-video-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:Bella-Health/bh-video-iOS.git";
 			requirement = {
@@ -656,7 +658,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		ACEB584127C79DFF00A43D22 /* VideoCallFramework */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ACEB584027C79DFF00A43D22 /* XCRemoteSwiftPackageReference "bh-video-iOS.git" */;
+			package = ACEB584027C79DFF00A43D22 /* XCRemoteSwiftPackageReference "bh-video-iOS" */;
 			productName = VideoCallFramework;
 		};
 /* End XCSwiftPackageProductDependency section */
