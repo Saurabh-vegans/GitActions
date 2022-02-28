@@ -40,7 +40,6 @@ jobs:
 
       - name: Pod Install
         run: |
-#             cd GithubActions
              pod setup
              pod install #--repo-update
 
