@@ -13,6 +13,9 @@ jobs:
   build:
     name: Unit Tests
     runs-on: macOS-latest
+    strategy:
+        matrix:
+            destination: ['platform=iOS Simulator,OS=15.2,name=iPhone 13 Pro Max']
     steps:
 
       - name: Setup SSH Authentication (Swift Package Manager)
@@ -48,7 +51,7 @@ jobs:
         id: unitTest
         continue-on-error: true
         run: |
-             xcodebuild clean build-for-testing test -scheme GithubActions -destination 'platform=iOS Simulator,OS=15.2,name=iPhone 13 Pro Max'
+             xcodebuild clean build-for-testing test -scheme GithubActions -destination "${destination}"
              echo "::set-output name=result::$?"
              if [[ $? == 0 ]]; then
              echo "Success"
