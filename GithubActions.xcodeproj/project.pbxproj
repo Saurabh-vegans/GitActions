@@ -11,6 +11,8 @@
 		AC5123E627CE459B00C8B863 /* VideoCallFramework in Frameworks */ = {isa = PBXBuildFile; productRef = AC5123E527CE459B00C8B863 /* VideoCallFramework */; };
 		AC5123E727CE45A200C8B863 /* LPMessagingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5123E227CE455500C8B863 /* LPMessagingSDK.xcframework */; };
 		AC5123E827CE45A200C8B863 /* LPMessagingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC5123E227CE455500C8B863 /* LPMessagingSDK.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC5123E927CE503C00C8B863 /* Pods_GithubActions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354CB8A64558A36F8EBC50E6 /* Pods_GithubActions.framework */; };
+		AC5123EA27CE503C00C8B863 /* Pods_GithubActions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 354CB8A64558A36F8EBC50E6 /* Pods_GithubActions.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ACE8A0BE27CCD33D00F8BD79 /* GithubActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8A0BD27CCD33D00F8BD79 /* GithubActionsTests.swift */; };
 		ACEB581F27C7771B00A43D22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB581E27C7771B00A43D22 /* AppDelegate.swift */; };
 		ACEB582127C7771B00A43D22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB582027C7771B00A43D22 /* SceneDelegate.swift */; };
@@ -18,7 +20,6 @@
 		ACEB582627C7771B00A43D22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEB582427C7771B00A43D22 /* Main.storyboard */; };
 		ACEB582827C7771E00A43D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEB582727C7771E00A43D22 /* Assets.xcassets */; };
 		ACEB582B27C7771E00A43D22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEB582927C7771E00A43D22 /* LaunchScreen.storyboard */; };
-		CEED52F02ED489B4821103CD /* Pods_GithubActions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354CB8A64558A36F8EBC50E6 /* Pods_GithubActions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AC5123E827CE45A200C8B863 /* LPMessagingSDK.xcframework in Embed Frameworks */,
+				AC5123EA27CE503C00C8B863 /* Pods_GithubActions.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,8 +84,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5123E727CE45A200C8B863 /* LPMessagingSDK.xcframework in Frameworks */,
+				AC5123E927CE503C00C8B863 /* Pods_GithubActions.framework in Frameworks */,
 				AC5123E627CE459B00C8B863 /* VideoCallFramework in Frameworks */,
-				CEED52F02ED489B4821103CD /* Pods_GithubActions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
