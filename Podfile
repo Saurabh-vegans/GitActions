@@ -13,6 +13,16 @@ target 'GithubActions' do
     inherit! :search_paths
     # Pods for testing
     pod 'LPMessagingSDK'
+    #  pod 'SwiftJWT'
+    pod 'SearchTextField'
+    pod 'Firebase/Crashlytics'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/RemoteConfig'
+    pod 'Firebase/Storage'
+    # pod 'Firebase/Functions'
+    pod 'Firebase/Auth’
+    pod 'Firebase/Database'
+    pod 'Firebase/DynamicLinks'
   end
 
 end
