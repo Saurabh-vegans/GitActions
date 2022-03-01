@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import VideoCallFramework
 import LPMessagingSDK
 
 class ViewController: UIViewController {
@@ -23,21 +22,13 @@ class ViewController: UIViewController {
 }
 
 struct Bank {
-    var balance: Double {
-        didSet {
-            if balance < 0 { balance = 0 }
-        }
-    }
+    var balance: Double { didSet { if balance < 0 { balance = 0 } } }
     
     init() { balance = 0 }
     
     init(balance: Double) { self.balance = balance }
     
-    mutating func add(money: Double) {
-        self.balance += money
-    }
+    mutating func add(money: Double) { self.balance += money }
     
-    mutating func remove(money: Double) {
-        self.balance -= money
-    }
+    mutating func remove(money: Double) { self.balance -= money }
 }
