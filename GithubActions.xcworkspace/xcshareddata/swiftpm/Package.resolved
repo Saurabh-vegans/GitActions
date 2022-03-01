@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "VideoCallFramework",
+        "repositoryURL": "git@github.com:Bella-Health/bh-video-iOS.git",
+        "state": {
+          "branch": "ChimeSDK_reference",
+          "revision": "b42da06a02984c0fc9d292f5a56dd0743a7e56f5",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
